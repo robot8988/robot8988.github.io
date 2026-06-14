@@ -1,7 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio website for Jinhyeok Jang, a Computer Science student at Seoul National University planning to enter Economics.">
+  <title>Jinhyeok Jang | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-  <h1>Welcome to The MTE World!</h1>
-  <p>Hosted on Github Pages</p>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Jinhyeok Jang home">Jinhyeok Jang</a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-controls="nav-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-list" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#ai-usage">AI Usage</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Economics + Computer Science</p>
+          <h1 id="hero-title">Jinhyeok Jang</h1>
+          <p class="hero-intro">Second-year undergraduate student in Computer Science at Seoul National University, with a growing interest in financial economics.</p>
+          <div class="hero-actions" aria-label="Profile actions">
+            <a class="button button-primary" href="mailto:robot8988@snu.ac.kr">Email Me</a>
+            <a class="button button-secondary" href="https://github.com/robot8988" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+        <figure class="portrait-panel">
+          <img src="assets/profile.jpg" alt="Portrait of Jinhyeok Jang" width="412" height="532">
+          <figcaption>Seoul National University</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">About Me</p>
+          <h2 id="about-title">Interests across markets, systems, and software.</h2>
+        </div>
+        <div class="about-layout">
+          <article class="content-block">
+            <h3>Profile</h3>
+            <p>
+              I am a second-year undergraduate student in the College of Liberal Studies at Seoul National University,
+              currently majoring in Computer Science and planning to enter the Economics major next semester.
+              Recently, I have become increasingly interested in financial economics, so I plan to take related courses.
+              In my free time, I enjoy playing League of Legends and a variety of other games.
+            </p>
+          </article>
+          <div class="detail-grid" aria-label="Profile details">
+            <article class="detail-card">
+              <span class="detail-label">Major</span>
+              <strong>Computer Science, Economics</strong>
+            </article>
+            <article class="detail-card">
+              <span class="detail-label">Education</span>
+              <strong>Seoul National University</strong>
+            </article>
+          </div>
+        </div>
+        <div class="skills" aria-label="Skills">
+          <span>Python</span>
+          <span>C++</span>
+          <span>Java</span>
+          <span>SQL</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-elevated" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Projects or Activities</p>
+          <h2 id="projects-title">Selected project and activity.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-meta">Project</div>
+            <h3>KICE_2025 Instagram Account</h3>
+            <p>
+              Last year, I independently ran the Instagram account kice_2025, creating CSAT-style game questions
+              mainly about League of Legends. The account reached about 3,800 followers and 30 million cumulative
+              views in Korea. A Clash Royale mock exam drew over 1,000 participants, enough to produce meaningful
+              grade cutoffs.
+            </p>
+            <div class="card-actions">
+              <a class="button button-primary" href="https://www.instagram.com/kice_2025/" target="_blank" rel="noopener noreferrer">Open Instagram</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">Activity</div>
+            <h3>League of Legends Diamond Tier</h3>
+            <p>
+              In League of Legends, I reached Diamond tier in solo queue in both 2024 and 2025.
+              My main position is mid lane, and I mostly played Vex. These days, because of academics and
+              other commitments, I mainly play Augmented ARAM, commonly called Asurajang, instead of heavier solo queue.
+            </p>
+            <div class="card-actions">
+              <a class="button button-primary" href="https://op.gg/ko/lol/summoners/kr/stronghawk-KR1" target="_blank" rel="noopener noreferrer">View OP.GG</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resume" aria-labelledby="resume-title">
+      <div class="container resume-layout">
+        <div class="section-heading">
+          <p class="eyebrow">CV / Resume</p>
+          <h2 id="resume-title">Academic and technical summary.</h2>
+        </div>
+        <div class="resume-grid">
+          <article class="resume-card">
+            <h3>Education</h3>
+            <p>Seoul National University</p>
+            <p>Computer Science, Economics</p>
+          </article>
+          <article class="resume-card">
+            <h3>Skills</h3>
+            <p>Python, C++, Java, SQL</p>
+          </article>
+          <article class="resume-card" aria-labelledby="cv-placeholder-title">
+            <h3 id="cv-placeholder-title">CV PDF</h3>
+            <p>Download or view my resume as a PDF.</p>
+            <div class="card-actions">
+              <a class="button button-primary" href="assets/cv.pdf" target="_blank" rel="noopener noreferrer">Open CV</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Get in touch.</h2>
+        </div>
+        <div class="contact-list">
+          <a class="contact-link" href="mailto:robot8988@snu.ac.kr">
+            <span>Email</span>
+            <strong>robot8988@snu.ac.kr</strong>
+          </a>
+          <a class="contact-link" href="https://github.com/robot8988" target="_blank" rel="noopener noreferrer">
+            <span>GitHub</span>
+            <strong>github.com/robot8988</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="courses" aria-labelledby="courses-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Courses I Plan To Take</p>
+          <h2 id="courses-title">Planned coursework.</h2>
+        </div>
+        <ol class="course-list">
+          <li>
+            <span class="course-number">01</span>
+            <span>Stocks, Bonds, Financial Derivatives 1 ~ 3 Series</span>
+          </li>
+          <li>
+            <span class="course-number">02</span>
+            <span>Concepts and Application of Probabilties</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-elevated" id="ai-usage" aria-labelledby="ai-usage-title">
+      <div class="container ai-layout">
+        <div class="section-heading">
+          <p class="eyebrow">AI Usage</p>
+          <h2 id="ai-usage-title">How this page was created.</h2>
+        </div>
+        <dl class="ai-details">
+          <div>
+            <dt>Tool</dt>
+            <dd>Codex</dd>
+          </div>
+          <div>
+            <dt>Prompt</dt>
+            <dd>Build a static personal portfolio website for GitHub Pages.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Jinhyeok Jang</p>
+      <a href="mailto:robot8988@snu.ac.kr">robot8988@snu.ac.kr</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
